@@ -14,7 +14,7 @@ export default function BookingWidget({place}){
     const {user} = useContext(UserContext);
 
     useEffect(() => {
-        setName(user.name);
+        setName(user?.name);
     },[user])
 
     let numberOfNights =  0 ;
